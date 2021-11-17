@@ -11,6 +11,6 @@ const iTTeamConnection=socket.connect(host)
 iTTeamConnection.on('IT-Problem',payload =>{
     console.log(`The IT Team Start fixing your problem ${payload.payload.serviceDescription}`);
 
-    iTTeamConnection.emit('ItTeam-recieved',payload)
+    iTTeamConnection.emit('ItTeam-received',payload)
 
 })
